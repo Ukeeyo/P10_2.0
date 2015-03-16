@@ -1,0 +1,125 @@
+body, html {
+   height:100%
+}
+
+#login_container {
+  background-color: #B5521F;
+  width: calc((100%/1.618)/2);
+  height: height: 280px;
+  text-align: center;
+  position: fixed;
+  left: calc((100%/1.618)/2);
+  top: 122px;
+  display: none;
+}
+
+input
+{
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border:solid 1px black;
+  padding:5px;
+}
+
+#header {
+  width: 100%;
+  height: 100px;
+  /*background-color: #09B235;*/
+ /* background-color: #B20F0E;*/
+ background-color: #820F09;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  display: block;
+}
+
+#logout {
+  float: right;
+  display: inline-block;
+}
+
+#logout_container {
+  text-align: right;
+  display: inline-block;
+  float: right;
+}
+
+#results_container {
+  display: inline-block;
+  height: calc(100% - 100px);
+  width: calc((100%/1.618)/2);
+  margin-top: 100px;
+  text-align: center;
+  /*background-color: #34FF6A;*/
+  background-image: url("../imgs/demask.jpg");;
+  float: left;
+  overflow-y:scroll;
+}
+
+#saved_container {
+  display: inline-block;
+  height: calc(100% - 100px);
+  width: calc((100%/1.618)/2);
+  margin-top: 100px;
+  text-align: center;
+  background-color: #B5521F;
+  float: left;
+  overflow-y:scroll;
+}
+
+#grocery_container {
+  display: inline-block;
+  height: calc(100% - 100px);
+  width: calc(100% - (100%/1.618));
+  margin-top: 100px;
+  text-align: left;
+  background-color: #FF3E44;
+  float: left;
+  overflow-y:scroll;
+}
+
+.recipe_image {
+  margin: auto;
+  max-width:100px;
+  max-height:100px;
+  width: auto;
+  height: auto;
+}
+
+.found_recipe {
+  width: 100%;
+  height: auto;
+  /*background-color: #B20F15;*/
+  background-color: #FFFFBE;
+  display: inline-block;
+}
+
+#header h1 {
+  bottom: 0;
+}
+
+.strikeout {
+  text-decoration: line-through;
+}
+
+#errors {
+  color: red;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+#search_form {
+display: inline-block;
+width: calc((100%/1.618)/2);
+float: left;
+}
+
+#search_box {
+  text-align: center;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+  margin-left: 5%;
+}

@@ -1,0 +1,38 @@
+
+<div id='header'>
+  <h1>Recipro</h1>
+
+  <form id='search_form' onsubmit="return false">
+    <input type="text" name='search' id="search_box" placeholder="Find me some recipes!">
+
+  </form>
+
+  <div id='logout_container'><%= session[:username] %><button id = 'logout'>Logout</button></div>
+
+</div>
+
+<div id='login_container'>
+  <h2>Hello, please login</h2>
+  <div id='login_inputs'>
+    <form id='formm'>
+     <p><input type="text" name="username" id="username_box" placeholder="username"></p>
+     <p><input type="text" name="password" id="password_box" placeholder="password"></p>
+   </form>
+   <p>don't have an account? <a href="#" onclick="return false;" id='account_creation_button'> click here to create one!</a></p>
+ </div>
+</div>
+<div id='account_setup'  style="display: none;">
+  <form onsubmit='return false' id='account_creation_form'>
+    <p><input type='text' id='create_username' placeholder='desired username'></p>
+    <p><input type='text' id='create_password' placeholder='desired password'></p>
+    <p><input type='text' id='create_email' placeholder='email address'></p>
+    <p><input type='submit' value='Submit'></p>
+  </form>
+  <p id='errors'></p>
+</div>
+
+<div id="results_container"><div class='found_recipe' id='search_head'></div></div>
+<div id="saved_container"><div class='found_recipe' id='saved_head'></div></div>
+<div id="grocery_container"><ul></ul></div>
+
+
